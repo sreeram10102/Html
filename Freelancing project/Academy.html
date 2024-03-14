@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html style="background-color:paleturquoise ;">
+
+<head>
+  <title>Phoenix Academy</title>
+  <style>
+    .topic {
+      text-align: center;
+      color: blue;
+    }
+
+    .carousel-item img {
+      max-height: 700px;
+      max-width: 400px;
+      /* Maintain aspect ratio */
+      margin: auto;
+      padding: auto;
+    }
+
+    .container-fluid.text-center {
+      text-align: center;
+    }
+
+    .contactform {
+      padding: 20px 20px;
+      justify-content: center;
+      margin-top: 70px;
+    }
+
+    .make {
+      color: mediumvioletred;
+      padding-bottom: 20px;
+    }
+
+    .box {
+      color: #040122;
+      border: 2px solid #000;
+      background-color: dimgrey;
+      padding-left: 20px;
+      width: 200px;
+      margin-bottom: 20px;
+      /* Centers the box horizontally */
+    }
+
+    .main-content {
+
+      max-width: 60%;
+
+      border-radius: 20px;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+      margin: 5em auto;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .company__info {
+      background-color: #008080;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .fa-android {
+      font-size: 3em;
+    }
+
+    @media screen and (max-width: 640px) {
+      .main-content {
+        width: 90%;
+      }
+
+      .company__info {
+        display: none;
+      }
+
+      .login_form {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+    }
+
+    @media screen and (min-width: 642px) and (max-width:800px) {
+      .main-content {
+        width: 70%;
+      }
+    }
+
+    .row>h2 {
+      color: #008080;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .login_form {
+      background-color: #fff;
+      text-align: center;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+
+    form {
+
+      padding: 0 2em;
+    }
+
+    .form__input {
+      width: 100%;
+      border: 0px solid transparent;
+      border-radius: 0;
+      border-bottom: 1px solid #aaa;
+      padding: 1em .5em .5em;
+      padding-left: 2em;
+      outline: none;
+      margin: 1.5em auto;
+      transition: all .5s ease;
+    }
+
+    .form__input:focus {
+      border-bottom-color: #008080;
+      box-shadow: 0 0 5px rgba(0, 80, 80, .4);
+      border-radius: 4px;
+    }
+
+    .btn {
+      transition: all .5s ease;
+      width: 70%;
+      border-radius: 30px;
+      color: #008080;
+      font-weight: 600;
+      background-color: #fff;
+      border: 1px solid #008080;
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      background-color: #008080;
+      color: #fff;
+    }
+  </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="topic">PHOENIX ACADEMY</h1>
+  <div class="container">
+    <h3>About</h3>
+    <p>Welcome to Phoenix Academy Tuition Classes, where education meets excellence! Established in 2017, we have been
+      committed to providing top-notch academic support and guidance to students from grades 5 to 12 and beyond. At
+      Phoenix Academy Tuition Classes, we believe in nurturing a student-centric learning environment that fosters
+      individual growth and academic success.</p>
+    <p>At Phoenix Academy Tuition Classes, we understand that each student is unique, with distinct learning needs and
+      pace. Therefore, our classes are designed to be student-centric, offering individualized attention and support.
+      Our small class sizes enable teachers to focus on each student's strengths and areas for improvement, ensuring
+      holistic development. Our commitment goes beyond academics; we are dedicated to supporting the overall growth and
+      well-being of every child.</p>
+    <h3>Classes we offer</h3>
+    <ul>
+      <li>Classes from 5 to 12</li>
+      <li>11th and 12th - Accountancy, Economics, and Business Studies</li>
+      <li>B.Com, BBM, MBA</li>
+      <li>CA, CS, and ICAI (Entrance)</li>
+      <li>Crash course for board exams</li>
+      <li>Special classes for supplementary exams</li>
+    </ul>
+    <h2>Glimpses</h2>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="padding-bottom: 200px;">
+      <div class="carousel-inner" height="20%">
+        <div class="carousel-item active">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipO_9ZhrNaijuPGDYzRCZPaGv44_P5iUBjTx76D5=s680-w680-h510-rw"
+            class="d-block w-100" width="300" height="300" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipNssvS1hB3i7qUDp71FSV16VmPxh0c6bdSbUoLs=s680-w680-h510-rw"
+            class="d-block w-100" width="300" height="300" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipOjOh5Wr9lyJI46LSXXf48f8cnSPiTDDXYwXVGN=s680-w680-h510-rw"
+            class="d-block w-100" width="300" height="300" alt="Third slide">
+        </div>
+        <!-- Add more carousel items as needed -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+  <!--<div class="contactform">
+    <div class="box">
+      <h3>Contact us</h3>
+    </div>
+
+    <form action="#" method="post">
+      <div class="make">
+        <label for="name"><mark>Full Name: </mark></label><br>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="make">
+        <label for="Current study type"><mark>Current study type/Proffesion:</mark></label><br>
+        <input type="text" id="class" name="class" required>
+      </div>
+      <div class="make">
+        <label for="dob"><mark>Date of birth:</mark></label><br>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="make">
+        <label for="Guardian's name"><mark>Gaurdian's Name:</mark> </label><br>
+        <input type="text" id="namer" name="namer" required>
+      </div>
+      <div class="make">
+        <label for="number"><mark>Phone number:</mark></label><br>
+        <input type="number" id="number" name="number" required>
+      </div>
+      <div class="make" display="inline-block">
+        <label for="Gender"><mark>Sex:</mark></label><br>
+        <label for="Gender">Male</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="Gender">Female</label>
+        <input type="radio" id="gender" name="gender">
+        <label for="Gender">Others</label>
+        <input type="radio" id="gender" name="gender">
+      </div>
+
+      <div class="make">
+        <label for="email"><mark>Email:</mark></label><br>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="make">
+        <label for="Subjects"><mark>Subjects:</mark></label><br>
+        <textarea id="email" rows="6" name="email" required></textarea>
+      </div>
+      <div class="make">
+
+        <input type="submit" id="submit" name="submit" onclick="success()" required>
+        <div class="temp" style="color: green;"></div>
+        <script>
+          function success() {
+            const elem = document.getElementsByClassName("temp")[0];
+            elem.innerHTML = "The form has been submitted for review !!!";
+            console.log("give it a check");
+            setTimeout(function () {
+              elem.innerHTML = "";
+            }, 60000);
+            /*alert("The form has been submitted for review");*/
+          }
+        </script>
+
+      </div>
+    </form>
+
+  </div> -->
+
+
+  <div style="padding-left: 100px;padding-bottom: 40px;">
+    <h2>Contact us </h2>
+  </div>
+  <div>
+    <div class="text-center">
+
+
+      <!-- Main Content -->
+      <div class="container">
+        <div class="row justify-content-center" style="padding-right : 10% ;width :150%;">
+          <div class="col-md-8">
+            <div class="form-container ">
+
+              <div class="row main-content bg-success text-center" style="justify-content: center !important
+          ;">
+                <div class="col-md-4 text-center company__info">
+                  <span class="company__logo">
+                    <h2><span class="fa fa-android"></span></h2>
+                  </span>
+                  <h4 class="company_title"></h4>
+                </div>
+                <div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+                  <div style="justify-content: center;">
+                    <div class="container-fluid">
+                      <div class="text-center">
+                        <div class="row">
+                          <h2>Contact form</h2>
+                        </div>
+                        <div class="row">
+                          <form control="" class="form-group">
+                            <div class="row">
+                              <input type="text" name="username" id="username" class="form__input"
+                                placeholder="Full Name" required>
+                            </div>
+                            <div class="row">
+                              <div class="row">
+                                <input type="text" name="username" id="username" class="form__input"
+                                  placeholder="Gaurdian's Name" required>
+                              </div>
+                              <div class="row">
+                                <div class="row">
+                                  <input type="number" name="username" id="username" class="form__input"
+                                    placeholder="Phone number" required>
+                                </div>
+                                <div class="row">
+                                  <div class="row">
+                                    <input type="text" name="username" id="username" class="form__input"
+                                      placeholder="Address" required>
+                                  </div>
+                                  <div class="row">
+                                    <div class="row">
+                                      <input type="text" name="username" id="username" class="form__input"
+                                        placeholder="Current education" required>
+                                    </div>
+                                    <div class="row">
+                                      <div class="row">
+                                        <input type="email" name="username" id="username" class="form__input"
+                                          placeholder="Email">
+                                      </div>
+                                      <div class="row">
+                                        <div class="row">
+                                          <input type="date" name="username" id="username" class="form__input"
+                                            placeholder="Date of birth">
+                                        </div>
+                                        <div class="row">
+                                          <!-- <span class="fa fa-lock"></span> -->
+                                          <input type="password" name="password" id="password" row="5"
+                                            class="form__input" placeholder="Subjects" required>
+                                        </div>
+                                        <div class="row">
+                                          <input type="checkbox" name="remember_me" id="remember_me" class=""
+                                            style="padding-bottom: 20px; display: inline-flex;">
+                                          <label for="remember_me">Remember Me!</label>
+                                        </div>
+                                        <div class="row">
+                                          <input type="submit" id="submit" name="submit" onclick="newform()" required>
+                                          <script>function newform() {
+                                              alert("The form has been submitted successfully");
+                                            }</script>
+                                        </div>
+                          </form>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Footer -->
+              <div class="container-fluid text-center footer" style="padding-top: 30px ;padding-right :140px">
+                contact us: <a href="mailto:sreerams203@gmai.com">Phoenix Academy</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</div>
+
+</html>
